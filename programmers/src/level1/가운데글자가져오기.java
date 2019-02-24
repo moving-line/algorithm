@@ -1,5 +1,3 @@
-package level1;
-
 /*
 문제 설명
 단어 s의 가운데 글자를 반환하는 함수, solution을 만들어 보세요.
