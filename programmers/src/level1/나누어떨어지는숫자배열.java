@@ -37,14 +37,26 @@ public class 나누어떨어지는숫자배열 {
 
         return answer;
 
-//        두번째 풀이
-//        int[] answer = Arrays.stream(arr).filter(i -> i % divisor == 0).toArray();
+//        두번째 풀이 (개선함)
+//        int[] answer = Arrays.stream(arr).filter(i -> i % divisor == 0).sorted().toArray();
 //        if(answer.length == 0) answer = new int[] {-1};
-//        Arrays.sort(answer);
 //
 //        return answer;
 
+//        세번째 풀이
+//        int[] answer = Arrays.stream(arr).filter(i -> i % divisor == 0).sorted().toArray();
+//        return answer.length != 0 ? answer : new int[] {-1};
+
+//        네번째 풀이
+//        ArrayList<Integer> list = new ArrayList<>();
+//        for (int a : arr) {
+//            if (a % divisor == 0) list.add(a);
+//        }
+//        if (list.size() == 0) return new int[] {-1};
+//
+//        return list.stream().mapToInt(i -> i).sorted().toArray();
     }
+
     @Test
     public void test() {
         나누어떨어지는숫자배열 test = new 나누어떨어지는숫자배열();
