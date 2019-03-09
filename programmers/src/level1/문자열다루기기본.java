@@ -63,11 +63,10 @@ public class 문자열다루기기본 {
 
     @Test
     public void test() {
-        문자열다루기기본 test = new 문자열다루기기본();
-        assertThat(test.solution("a234")).isEqualTo(false);
-        assertThat(test.solution("1234")).isEqualTo(true);
-        assertThat(test.solution("123456")).isEqualTo(true);
-        assertThat(test.solution("123a56")).isEqualTo(false);
+        assertThat(solution("a234")).isEqualTo(false);
+        assertThat(solution("1234")).isEqualTo(true);
+        assertThat(solution("123456")).isEqualTo(true);
+        assertThat(solution("123a56")).isEqualTo(false);
 
     }
 }

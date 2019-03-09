@@ -7,8 +7,18 @@ num은 int 범위의 정수입니다.
 0은 짝수입니다.
 */
 
+import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class 짝수와홀수 {
     public String solution(int num) {
         return num % 2 == 0 ? "Even" : "Odd";
+    }
+
+    @Test
+    public void test() {
+        assertThat(solution(3)).isEqualTo("Odd");
+        assertThat(solution(4)).isEqualTo("Even");
     }
 }

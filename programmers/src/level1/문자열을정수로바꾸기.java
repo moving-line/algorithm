@@ -20,10 +20,8 @@ public class 문자열을정수로바꾸기 {
 
     @Test
     public void test() {
-        문자열을정수로바꾸기 test = new 문자열을정수로바꾸기();
-
-        assertThat(test.solution("+1234")).isEqualTo(1234);
-        assertThat(test.solution("1234")).isEqualTo(1234);
-        assertThat(test.solution("-1234")).isEqualTo(-1234);
+        assertThat(solution("+1234")).isEqualTo(1234);
+        assertThat(solution("1234")).isEqualTo(1234);
+        assertThat(solution("-1234")).isEqualTo(-1234);
     }
 }

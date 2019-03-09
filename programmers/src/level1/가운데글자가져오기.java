@@ -7,11 +7,21 @@
 s는 길이가 1 이상, 100이하인 스트링입니다.
  */
 
+import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class 가운데글자가져오기 {
     public String solution(String s) {
         int mid = s.length();
 
         return (mid % 2 == 0) ?
                 s.substring(mid/2 - 1, mid/2 + 1) : s.substring(mid/2, mid/2 + 1);
+    }
+
+    @Test
+    public void test() {
+        assertThat(solution("abcde")).isEqualTo("c");
+        assertThat(solution("qwer")).isEqualTo("we");
     }
 }

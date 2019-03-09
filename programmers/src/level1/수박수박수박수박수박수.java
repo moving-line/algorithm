@@ -7,6 +7,10 @@
 n은 길이 10,000이하인 자연수입니다.
  */
 
+import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class 수박수박수박수박수박수 {
     public String solution(int n) {
         StringBuilder str = new StringBuilder();
@@ -15,5 +19,11 @@ public class 수박수박수박수박수박수 {
         }
 
         return str.toString();
+    }
+
+    @Test
+    public void test() {
+        assertThat(solution(3)).isEqualTo("수박수");
+        assertThat(solution(4)).isEqualTo("수박수박");
     }
 }

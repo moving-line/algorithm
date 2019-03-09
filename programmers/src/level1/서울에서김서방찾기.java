@@ -22,13 +22,12 @@ public class 서울에서김서방찾기 {
 
     @Test
     public void test() {
-        서울에서김서방찾기 test = new 서울에서김서방찾기();
         String[] seoul = {"Lee", "Choi", "Kim", "Park"};
         String[] seoul2 = {"Lee", "Choi", "Park", "Kim"};
         String[] seoul3 = {"Kim", "Choi", "Park", "Lee"};
 
-        assertThat(test.solution(seoul)).isEqualTo("김서방은 2에 있다");
-        assertThat(test.solution(seoul2)).isEqualTo("김서방은 3에 있다");
-        assertThat(test.solution(seoul3)).isEqualTo("김서방은 0에 있다");
+        assertThat(solution(new String[] {"Lee", "Choi", "Kim", "Park"})).isEqualTo("김서방은 2에 있다");
+        assertThat(solution(new String[] {"Lee", "Choi", "Park", "Kim"})).isEqualTo("김서방은 3에 있다");
+        assertThat(solution(new String[] {"Kim", "Choi", "Park", "Lee"})).isEqualTo("김서방은 0에 있다");
     }
 }

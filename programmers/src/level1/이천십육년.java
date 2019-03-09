@@ -81,14 +81,12 @@ public class 이천십육년 {
 
     @Test
     public void test() {
-        이천십육년 test = new 이천십육년();
-
-        assertThat(test.solution(2, 1)).isEqualTo("MON");
-        assertThat(test.solution(3, 1)).isEqualTo("TUE");
-        assertThat(test.solution(6, 1)).isEqualTo("WED");
-        assertThat(test.solution(9, 1)).isEqualTo("THU");
-        assertThat(test.solution(1, 1)).isEqualTo("FRI");
-        assertThat(test.solution(10, 1)).isEqualTo("SAT");
-        assertThat(test.solution(5, 1)).isEqualTo("SUN");
+        assertThat(solution(2, 1)).isEqualTo("MON");
+        assertThat(solution(3, 1)).isEqualTo("TUE");
+        assertThat(solution(6, 1)).isEqualTo("WED");
+        assertThat(solution(9, 1)).isEqualTo("THU");
+        assertThat(solution(1, 1)).isEqualTo("FRI");
+        assertThat(solution(10, 1)).isEqualTo("SAT");
+        assertThat(solution(5, 1)).isEqualTo("SUN");
     }
 }

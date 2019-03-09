@@ -69,12 +69,10 @@ public class 문자열내p와y의개수 {
 
     @Test
     public void test() {
-        문자열내p와y의개수 test = new 문자열내p와y의개수();
-
-        assertThat(test.solution("pPoooyY")).isEqualTo(true);
-        assertThat(test.solution("Pyy")).isEqualTo(false);
-        assertThat(test.solution("PyY")).isEqualTo(false);
-        assertThat(test.solution("abc")).isEqualTo(true);
+        assertThat(solution("pPoooyY")).isEqualTo(true);
+        assertThat(solution("Pyy")).isEqualTo(false);
+        assertThat(solution("PyY")).isEqualTo(false);
+        assertThat(solution("abc")).isEqualTo(true);
 
     }
 }

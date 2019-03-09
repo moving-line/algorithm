@@ -48,11 +48,9 @@ public class 두정수사이의합 {
 
     @Test
     public void test() {
-        두정수사이의합 test = new 두정수사이의합();
-
-        assertThat(test.solution(3, 5)).isEqualTo(12);
-        assertThat(test.solution(5, 3)).isEqualTo(12);
-        assertThat(test.solution(3, 3)).isEqualTo(3);
-        assertThat(test.solution(-3, 5)).isEqualTo(9);
+        assertThat(solution(3, 5)).isEqualTo(12);
+        assertThat(solution(5, 3)).isEqualTo(12);
+        assertThat(solution(3, 3)).isEqualTo(3);
+        assertThat(solution(-3, 5)).isEqualTo(9);
     }
 }

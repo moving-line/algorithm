@@ -23,10 +23,8 @@ public class 약수의합 {
 
     @Test
     public void test() {
-        약수의합 test = new 약수의합();
-
-        assertThat(test.solution(12)).isEqualTo(28);
-        assertThat(test.solution(5)).isEqualTo(6);
-        assertThat(test.solution(1)).isEqualTo(1);
+        assertThat(solution(12)).isEqualTo(28);
+        assertThat(solution(5)).isEqualTo(6);
+        assertThat(solution(1)).isEqualTo(1);
     }
 }

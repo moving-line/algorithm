@@ -35,14 +35,7 @@ public class 같은숫자는싫어 {
 
     @Test
     public void test() {
-        같은숫자는싫어 test = new 같은숫자는싫어();
-
-        int[] arr1 = {1, 1, 3, 3, 0, 1, 1};
-        int[] arr2 = {4, 4, 4, 3, 3};
-
-
-        assertThat(test.solution(arr1)).isEqualTo(new int[] {1, 3, 0, 1});
-        assertThat(test.solution(arr2)).isEqualTo(new int[] {4, 3});
-
+        assertThat(solution(new int[] {1, 1, 3, 3, 0, 1, 1})).isEqualTo(new int[] {1, 3, 0, 1});
+        assertThat(solution(new int[] {4, 4, 4, 3, 3})).isEqualTo(new int[] {4, 3});
     }
 }

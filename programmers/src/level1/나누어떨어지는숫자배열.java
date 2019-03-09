@@ -59,17 +59,8 @@ public class 나누어떨어지는숫자배열 {
 
     @Test
     public void test() {
-        나누어떨어지는숫자배열 test = new 나누어떨어지는숫자배열();
-        int[] arr1 = {5, 9, 7, 10};
-        int[] arr2 = {2, 36, 1, 3};
-        int[] arr3 = {3, 2, 6};
-
-        int[] arr1Answer = {5, 10};
-        int[] arr2Answer = {1, 2, 3, 36};
-        int[] arr3Answer = {-1};
-
-        assertThat(test.solution(arr1, 5)).isEqualTo(arr1Answer);
-        assertThat(test.solution(arr2, 1)).isEqualTo(arr2Answer);
-        assertThat(test.solution(arr3, 10)).isEqualTo(arr3Answer);
+        assertThat(solution(new int[] {5, 9, 7, 10}, 5)).isEqualTo(new int[] {5, 10});
+        assertThat(solution(new int[] {2, 36, 1, 3}, 1)).isEqualTo(new int[] {1, 2, 3, 36});
+        assertThat(solution(new int[] {3, 2, 6}, 10)).isEqualTo(new int[] {-1});
     }
 }

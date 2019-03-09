@@ -45,11 +45,9 @@ public class 하샤드수 {
 
     @Test
     public void test() {
-        하샤드수 test = new 하샤드수();
-
-        assertThat(test.solution(10)).isEqualTo(true);
-        assertThat(test.solution(12)).isEqualTo(true);
-        assertThat(test.solution(11)).isEqualTo(false);
-        assertThat(test.solution(13)).isEqualTo(false);
+        assertThat(solution(10)).isEqualTo(true);
+        assertThat(solution(12)).isEqualTo(true);
+        assertThat(solution(11)).isEqualTo(false);
+        assertThat(solution(13)).isEqualTo(false);
     }
 }

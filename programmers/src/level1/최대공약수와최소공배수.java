@@ -47,10 +47,8 @@ public class 최대공약수와최소공배수 {
 
     @Test
     public void test() {
-        최대공약수와최소공배수 test = new 최대공약수와최소공배수();
-
-        assertThat(test.solution(3, 12)).isEqualTo(new int[] {3, 12});
-        assertThat(test.solution(2, 5)).isEqualTo(new int[] {1, 10});
-        assertThat(test.solution(6, 14)).isEqualTo(new int[] {2, 42});
+        assertThat(solution(3, 12)).isEqualTo(new int[] {3, 12});
+        assertThat(solution(2, 5)).isEqualTo(new int[] {1, 10});
+        assertThat(solution(6, 14)).isEqualTo(new int[] {2, 42});
     }
 }

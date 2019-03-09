@@ -41,9 +41,7 @@ public class 핸드폰번호가리기 {
 
     @Test
     public void test() {
-        핸드폰번호가리기 test =  new 핸드폰번호가리기();
-
-        assertThat(test.solution("01033334444")).isEqualTo("*******4444");
-        assertThat(test.solution("027778888")).isEqualTo("*****8888");
+        assertThat(solution("01033334444")).isEqualTo("*******4444");
+        assertThat(solution("027778888")).isEqualTo("*****8888");
     }
 }

@@ -46,9 +46,7 @@ public class 문자열내림차순으로배치하기 {
 
     @Test
     public void test() {
-        문자열내림차순으로배치하기 test = new 문자열내림차순으로배치하기();
-
-        assertThat(test.solution("AcBabC")).isEqualTo("cbaCBA");
+        assertThat(solution("AcBabC")).isEqualTo("cbaCBA");
     }
 
 }
