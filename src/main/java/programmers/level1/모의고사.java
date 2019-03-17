@@ -21,69 +21,70 @@ import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 import static org.assertj.core.api.Java6Assertions.assertThat;
 
 public class 모의고사 {
     public int[] solution(int[] answers) {
 //        첫번째 풀이
-        int[][] students = {
-                {1, 2, 3, 4, 5},
-                {2, 1, 2, 3, 2, 4, 2, 5},
-                {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}
-        };
-
-        int[] answerCount = new int[students.length];
-        for (int i = 0; i < students.length; i++) {
-            int count = 0;
-            for (int j = 0; j < answers.length; j++) {
-                if (answers[j] == students[i][j % students[i].length]) count++;
-            }
-            answerCount[i] = count;
-        }
-
-        int max = 0;
-        for (int c : answerCount) {
-            if (c > max) max = c;
-        }
-
-        ArrayList<Integer> list = new ArrayList<>();
-        for (int i = 0; i < answerCount.length; i++) {
-            if (answerCount[i] == max) {
-                list.add(i + 1);
-            }
-        }
-
-        Collections.sort(list);
-
-        int[] answer = new int[list.size()];
-        for (int i = 0; i < list.size(); i++) {
-            answer[i] = list.get(i);
-        }
-
-        return answer;
-
-//        두번째 풀이
 //        int[][] students = {
 //                {1, 2, 3, 4, 5},
 //                {2, 1, 2, 3, 2, 4, 2, 5},
 //                {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}
 //        };
-//        int[] score = new int[3];
+//        int[] answerCount = new int[students.length];
 //
-//        for (int i = 0; i < answers.length; i++) {
-//            for (int j = 0; j < students.length; j++) {
-//                if (answers[i] == students[j][i % students[j].length]) score[j]++;
+//        for (int i = 0; i < students.length; i++) {
+//            int count = 0;
+//            for (int j = 0; j < answers.length; j++) {
+//                if (answers[j] == students[i][j % students[i].length]) count++;
+//            }
+//            answerCount[i] = count;
+//        }
+//
+//        int max = 0;
+//        for (int c : answerCount) {
+//            if (c > max) max = c;
+//        }
+//
+//        ArrayList<Integer> list = new ArrayList<>();
+//        for (int i = 0; i < answerCount.length; i++) {
+//            if (answerCount[i] == max) {
+//                list.add(i + 1);
 //            }
 //        }
 //
-//        int maxScore = Math.max(score[0], Math.max(score[1], score[2]));
-//        ArrayList<Integer> list = new ArrayList<>();
-//        for (int i = 0; i < score.length; i++) {
-//            if (maxScore == score[i]) list.add(i + 1);
+//        Collections.sort(list);
+//
+//        int[] answer = new int[list.size()];
+//        for (int i = 0; i < list.size(); i++) {
+//            answer[i] = list.get(i);
 //        }
 //
-//        return list.stream().mapToInt(i -> i).toArray();
+//        return answer;
+
+//        두번째 풀이
+        int[][] students = {
+                {1, 2, 3, 4, 5},
+                {2, 1, 2, 3, 2, 4, 2, 5},
+                {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}
+        };
+        int[] score = new int[students.length];
+
+        for (int i = 0; i < answers.length; i++) {
+            for (int j = 0; j < students.length; j++) {
+                if (answers[i] == students[j][i % students[j].length]) score[j]++;
+            }
+        }
+
+        int maxScore = Math.max(score[0], Math.max(score[1], score[2]));
+        List<Integer> list = new ArrayList<>();
+        for (int i = 0; i < score.length; i++) {
+            if (maxScore == score[i]) list.add(i + 1);
+        }
+
+        return list.stream().mapToInt(i -> i).toArray();
     }
 
 
