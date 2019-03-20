@@ -34,6 +34,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 
 public class 위장 {
     public int solution(String[][] clothes) {
+//        첫번째 풀이
         Map<String, List<String>> map = new HashMap<>();
 
         for (String[] clothe : clothes) {
@@ -54,6 +55,19 @@ public class 위장 {
         }
 
         return sum - 1;
+
+//        두번째 풀이
+//        Map<String, Integer> map = new HashMap<>();
+//
+//        for (String[] clothe : clothes) {
+//            int count = map.containsKey(clothe[1]) ? map.get(clothe[1]) + 1 : 1;
+//            map.put(clothe[1], count);
+//        }
+//
+//        int answer = 1;
+//        for (Integer count : map.values()) answer *= count + 1;
+//
+//        return answer - 1;
     }
 
     @Test
