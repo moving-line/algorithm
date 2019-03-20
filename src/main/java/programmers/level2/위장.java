@@ -23,6 +23,7 @@ clothes의 모든 원소는 문자열로 이루어져 있습니다.
 
 package programmers.level2;
 
+
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -30,7 +31,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class 위장 {
     public int solution(String[][] clothes) {

@@ -18,7 +18,7 @@ package programmers.level2;
 
 import org.junit.Test;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class 전화번호목록 {
     public boolean solution(String[] phone_book) {

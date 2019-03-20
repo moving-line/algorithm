@@ -19,7 +19,7 @@ budget은 예산을 나타내며, 1 이상 10,000,000 이하의 자연수입니�
 
 package programmers.level1;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;

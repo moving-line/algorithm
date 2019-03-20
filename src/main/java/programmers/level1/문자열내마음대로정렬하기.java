@@ -13,7 +13,7 @@ strings의 원소는 길이 1 이상, 100이하인 문자열입니다.
 
 package programmers.level1;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.*;
 

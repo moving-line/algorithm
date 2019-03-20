@@ -17,7 +17,7 @@
  */
 package programmers.level1;
 
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Collections;
