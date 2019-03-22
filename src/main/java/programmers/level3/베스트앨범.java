@@ -119,8 +119,8 @@ public class 베스트앨범 {
             if (this.played > other.played) return -1;
             else if (this.played < other.played) return 1;
             else {
-                if (this.index < other.index) return 1;
-                return this.index - other.index -1;
+                if (this.index < other.index) return -1;
+                return 1;
             }
         }
     }
