@@ -27,6 +27,7 @@ import java.util.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class 베스트앨범 {
+//     >>>>>>>>>>>> 첫번째 풀이 <<<<<<<<<<<<<
     public int[] solution(String[] genres, int[] plays) {
         Map<String, Map<Integer, List<Integer>>> map = new HashMap<>();
         Map<String, Integer> sortMap = new TreeMap<>();
@@ -100,18 +101,94 @@ public class 베스트앨범 {
         return list;
     }
 
+//     >>>>>>>>>>>> 두번째 풀이 <<<<<<<<<<<<<
+    class Music implements Comparable<Music> {
+        private int played;
+        private int index;
+
+        public Music(int played, int index) {
+            this.played = played;
+            this.index = index;
+        }
+        public int getIndex() {
+            return index;
+        }
+
+        @Override
+        public int compareTo(Music other) {
+            if (this.played > other.played) return -1;
+            else if (this.played < other.played) return 1;
+            else {
+                if (this.index < other.index) return 1;
+                return this.index - other.index -1;
+            }
+        }
+    }
+
+    private List<Integer> answerList;
+
+    public int[] solution2(String[] genres, int[] plays) {
+        answerList = new ArrayList<>();
+
+        Map<String, List<Music>> map = generateMap(genres, plays);
+
+        Map<Integer, String> sortMap = new TreeMap<>(Collections.reverseOrder());
+        for (Map.Entry<String, List<Music>> entry : map.entrySet()) {
+            sortMap.put(sum(entry.getValue()), entry.getKey());
+        }
+
+        for (Map.Entry<Integer, String> entry : sortMap.entrySet()) {
+            List<Music> list = map.get(entry.getValue());
+            Collections.sort(list);
+            addAnswer(list);
+        }
+
+        int[] answer = new int[answerList.size()];
+        for (int i = 0; i < answer.length; i++) answer[i] = answerList.get(i);
+
+        return answer;
+    }
+
+    private Map<String, List<Music>> generateMap(String[] genres, int[] plays) {
+        Map<String, List<Music>> map = new HashMap<>();
+
+        for (int i = 0; i < genres.length; i++) {
+            if(map.get(genres[i]) != null) {
+                List<Music> list = map.get(genres[i]);
+                list.add(new Music(plays[i], i));
+                map.put(genres[i], list);
+            } else {
+                List<Music> list = new ArrayList<>(Arrays.asList(new Music(plays[i], i)));
+                map.put(genres[i], list);
+            }
+        }
+
+        return map;
+    }
+
+    private void addAnswer(List<Music> list) {
+        answerList.add(list.get(0).getIndex());
+        if(list.size() > 1) answerList.add(list.get(1).getIndex());
+    }
+
+    private int sum(List<Music> value) {
+        int answer = 0;
+        for (Music music : value) answer += music.played;
+        return answer;
+    }
+
     @Test
     public void test() {
-        assertThat(solution(new String[] {"classic", "pop", "classic", "classic", "pop"},
+        assertThat(solution2(new String[] {"classic", "pop", "classic", "classic", "pop"},
                 new int[] {500, 600, 150, 800, 2500})).isEqualTo(new int[] {4, 1, 3, 0});
 
-        assertThat(solution(new String[] {"classic", "pop", "classic", "classic", "pop"},
+        assertThat(solution2(new String[] {"classic", "pop", "classic", "classic", "pop"},
                 new int[] {800, 600, 800, 800, 2500})).isEqualTo(new int[] {4, 1, 0, 2});
 
-        assertThat(solution(new String[] {"classic", "pop", "classic", "classic", "pop"},
+        assertThat(solution2(new String[] {"classic", "pop", "classic", "classic", "pop"},
                 new int[] {800, 600, 600, 800, 2500})).isEqualTo(new int[] {4, 1, 0, 3});
 
-        assertThat(solution(new String[] {"classic", "classic", "pop"},
+        assertThat(solution2(new String[] {"classic", "classic", "pop"},
                 new int[] {800, 800, 2500})).isEqualTo(new int[] {2, 0, 1});
     }
 }
