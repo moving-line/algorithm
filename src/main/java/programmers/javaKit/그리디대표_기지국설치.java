@@ -35,7 +35,7 @@ import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class 그리디_기지국설치 {
+public class 그리디대표_기지국설치 {
 
 
     public int solution(int n, int[] stations, int w) {
