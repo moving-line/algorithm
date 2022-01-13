@@ -20,6 +20,8 @@ package programmers.javaKit;
 import org.junit.Test;
 
 import java.util.Arrays;
+//import java.util.stream.Collectors;
+//import java.util.stream.IntStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -42,7 +44,7 @@ public class 정렬대표_가장큰수 {
 //                .mapToObj(String::valueOf)
 //                .sorted((s1, s2) -> (s2 + s1).compareTo(s1 + s2))
 //                .collect(Collectors.joining());
-//        if(answer.startsWith("0")) return 0;
+//        if(answer.startsWith("0")) return "0";
 //        return answer;
     }
 

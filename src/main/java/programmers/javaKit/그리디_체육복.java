@@ -35,7 +35,8 @@ import org.junit.Test;
 
 import java.util.*;
 
-import static org.assertj.core.api.Java6Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class 그리디_체육복 {
     public int solution(int n, int[] lost, int[] reserve) {
