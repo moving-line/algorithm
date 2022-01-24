@@ -6,6 +6,7 @@ import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+// 2019 카카오 블라인드 채용
 public class 실패율 {
     public int[] solution(int N, int[] stages) {
         List<Stage> list = new ArrayList<>();
