@@ -4,6 +4,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+// 2021 카카오 채용연계 인턴십
 public class 숫자문자열과영단어 {
     public int solution(String s) {
         String[] numbers = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
