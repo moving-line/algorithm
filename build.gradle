@@ -20,5 +20,4 @@ dependencies {
     compile 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     compile 'org.junit.vintage:junit-vintage-engine:5.8.2'
     compile 'org.assertj:assertj-core:3.22.0'
-    compile 'org.testng:testng:6.9.10'
 }

@@ -1,10 +1,6 @@
 package leetcode;
 
-import org.testng.annotations.Test;
-
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Stack;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -1,6 +1,6 @@
 package leetcode;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 
 public class L21_MergeTwoSortedLists {
     static final int OVER_NUM =101;
