@@ -10,7 +10,7 @@ n은 2이상 1000000이하의 자연수입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -23,7 +23,7 @@ dates에 들어있는 날짜에 공급되는 밀가루는 작업 시작 전 새�
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
 import java.util.LinkedList;

@@ -10,7 +10,7 @@ s는 0으로 시작하지 않습니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

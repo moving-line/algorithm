@@ -8,7 +8,7 @@ n은 10,000,000,000이하인 자연수입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

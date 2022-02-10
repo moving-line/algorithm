@@ -20,7 +20,7 @@ n개의 음이 아닌 정수가 있습니다. 이 수를 적절히 더하거나 
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

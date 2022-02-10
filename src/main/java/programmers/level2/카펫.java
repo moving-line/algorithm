@@ -17,7 +17,7 @@ Leo가 본 카펫에서 갈색 격자의 수 brown, 빨간색 격자의 수 red�
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

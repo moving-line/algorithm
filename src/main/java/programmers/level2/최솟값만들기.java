@@ -1,6 +1,6 @@
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

@@ -15,7 +15,7 @@ routes[i][0]에는 i번째 차량이 고속도로에 진입한 지점, routes[i]
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

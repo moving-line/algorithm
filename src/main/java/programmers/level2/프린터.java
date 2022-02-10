@@ -23,7 +23,7 @@ location은 0 이상 (현재 대기목록에 있는 작업 수 - 1) 이하의 �
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.LinkedList;
 import java.util.Queue;

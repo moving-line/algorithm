@@ -8,7 +8,7 @@ N의 범위 : 100,000,000 이하의 자연수
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -28,7 +28,7 @@ heights는 길이 2 이상 100 이하인 정수 배열입니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 

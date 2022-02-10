@@ -10,7 +10,7 @@ Kim은 반드시 seoul 안에 포함되어 있습니다.
 */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

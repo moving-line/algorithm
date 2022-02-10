@@ -22,7 +22,7 @@ N은 1 이상 80 이하인 자연수이다.
 
 package programmers.level3;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

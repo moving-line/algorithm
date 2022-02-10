@@ -27,7 +27,7 @@ name의 길이는 1 이상 20 이하입니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

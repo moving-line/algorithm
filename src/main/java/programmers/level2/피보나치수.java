@@ -17,7 +17,7 @@ F(5) = F(3) + F(4) = 2 + 3 = 5
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

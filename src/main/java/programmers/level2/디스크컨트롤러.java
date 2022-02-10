@@ -45,7 +45,7 @@ jobs의 각 행은 하나의 작업에 대한 [작업이 요청되는 시점, �
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;

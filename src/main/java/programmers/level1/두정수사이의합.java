@@ -11,7 +11,7 @@ a와 b의 대소관계는 정해져있지 않습니다.
 
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

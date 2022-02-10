@@ -10,7 +10,7 @@ arr은 길이 1 이상인 배열입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;

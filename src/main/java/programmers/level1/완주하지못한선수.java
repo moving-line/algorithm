@@ -13,7 +13,7 @@ completion의 길이는 participant의 길이보다 1 작습니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
 

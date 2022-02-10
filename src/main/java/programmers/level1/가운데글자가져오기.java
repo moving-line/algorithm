@@ -8,7 +8,7 @@ s는 길이가 1 이상, 100이하인 스트링입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

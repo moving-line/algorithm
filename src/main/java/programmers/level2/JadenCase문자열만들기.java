@@ -11,7 +11,7 @@ s는 알파벳과 공백문자(" ")로 이루어져 있습니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -29,8 +29,8 @@ arrangement의 여는 괄호와 닫는 괄호는 항상 쌍을 이룹니다.
 
 package programmers.level2;
 
-import org.junit.Test;
 
+import org.junit.jupiter.api.Test;
 
 import java.util.Stack;
 

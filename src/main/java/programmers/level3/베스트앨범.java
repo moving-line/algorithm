@@ -20,7 +20,7 @@ genres와 plays의 길이는 같으며, 이는 1 이상 10,000 이하입니다.
 
 package programmers.level3;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 

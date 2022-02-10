@@ -8,7 +8,7 @@ arr의 원소는 -10,000 이상 10,000 이하인 정수입니다.
 */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

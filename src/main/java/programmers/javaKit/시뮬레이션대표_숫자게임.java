@@ -30,7 +30,7 @@ B 팀원들을 어떤 순서로 출전시켜도 B팀의 승점은 0점입니다.
 
 package programmers.javaKit;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 

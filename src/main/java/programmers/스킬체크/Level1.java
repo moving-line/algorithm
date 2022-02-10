@@ -1,6 +1,6 @@
 package programmers.스킬체크;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 

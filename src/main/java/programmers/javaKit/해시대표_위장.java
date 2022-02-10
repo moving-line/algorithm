@@ -42,9 +42,8 @@ face에 해당하는 의상이 crowmask, bluesunglasses, smoky_makeup이므로 �
 
 package programmers.javaKit;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 

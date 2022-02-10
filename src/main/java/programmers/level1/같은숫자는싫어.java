@@ -15,7 +15,7 @@ arr = [4, 4, 4, 3, 3] 이면 [4, 3] 을 return 합니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;

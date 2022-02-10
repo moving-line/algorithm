@@ -22,7 +22,7 @@ n은 500,000,000이하의 자연수 입니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

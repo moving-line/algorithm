@@ -12,7 +12,7 @@ Finn은 요즘 수학공부에 빠져 있습니다. 수학 공부를 하던 Finn
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

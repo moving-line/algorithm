@@ -19,7 +19,7 @@ operations의 원소는 큐가 수행할 연산을 나타냅니다.
 
 package programmers.level3;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

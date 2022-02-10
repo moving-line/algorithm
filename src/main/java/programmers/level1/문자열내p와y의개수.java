@@ -12,7 +12,7 @@ s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True, 다르면 False
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 

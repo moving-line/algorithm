@@ -18,7 +18,7 @@ scoville의 원소는 각각 0 이상 1,000,000 이하입니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 

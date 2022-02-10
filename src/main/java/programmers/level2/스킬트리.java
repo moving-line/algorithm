@@ -18,7 +18,7 @@ skill_trees의 원소는 길이가 2 이상 26 이하인 문자열이며, 스킬
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 

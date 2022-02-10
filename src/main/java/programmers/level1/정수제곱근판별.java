@@ -8,7 +8,7 @@ n은 1이상, 50000000000000 이하인 정수입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

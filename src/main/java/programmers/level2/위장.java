@@ -24,7 +24,7 @@ clothes의 모든 원소는 문자열로 이루어져 있습니다.
 package programmers.level2;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.HashMap;

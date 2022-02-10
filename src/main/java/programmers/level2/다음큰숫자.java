@@ -15,7 +15,7 @@ n은 1,000,000 이하의 자연수 입니다.
 
 package programmers.level2;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;

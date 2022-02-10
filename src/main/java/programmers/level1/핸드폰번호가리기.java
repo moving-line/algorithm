@@ -9,7 +9,7 @@ s는 길이 4 이상, 20이하인 문자열입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

@@ -9,7 +9,7 @@ n은 1이상 8000000000 이하인 자연수입니다.
  */
 package programmers.level1;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.Comparator;
