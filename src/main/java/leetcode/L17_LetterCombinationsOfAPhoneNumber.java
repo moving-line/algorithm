@@ -1,7 +1,7 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.sql.Array;
+import java.util.*;
 
 public class L17_LetterCombinationsOfAPhoneNumber {
     public List<String> letterCombinations(String digits) {
@@ -20,6 +20,25 @@ public class L17_LetterCombinationsOfAPhoneNumber {
             answer = newStrs;
         }
         return answer;
+
+        // 상수크기 배열로
+//        List<String> answer = new ArrayList<>();
+//        if (digits.equals("")) return answer;
+//
+//        String[] buttons = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+//        answer.add("");
+//
+//        for (char c : digits.toCharArray()) {
+//            List<String> newList = new ArrayList<>();
+//            for (char subC : buttons[c - '0'].toCharArray()) {
+//                for (String s : answer) {
+//                    newList.add(s + subC);
+//                }
+//            }
+//            answer = newList;
+//        }
+//
+//        return answer;
     }
 
     private List<String> convertToLetters(char c) {
